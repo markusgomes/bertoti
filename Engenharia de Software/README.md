@@ -1,1 +1,6 @@
-# bertoti
+Comentário:
+
+  O texto destaca três diferenças importantes entre programação e engenharia de software. A primeira diferença é em relação ao tempo, onde precisamos estar cientes da passagem do tempo e da necessidade de adaptação futura do software. Refletindo a natureza dinâmica da engenharia de software. Requisitos e as necessidades dos usuários podem evoluir ao longo do tempo.
+  A segunda diferença, escala e eficiência. Na engenharia de software, é necessário considerar como o software pode lidar com uma grande quantidade de dados e atender a uma grande quantidade de usuários.
+  Por fim, a terceira diferença ressalta a complexidade das decisões tomadas pelos engenheiros de software. Eles são confrontados com situações em que precisam fazer escolhas que podem ter consequências significativas, mesmo quando as estimativas de tempo e crescimento podem ser imprecisas. Isso destaca a responsabilidade e o desafio enfrentados pelos engenheiros de software em tomar decisões de alto risco.
+  Essas diferenças ressaltam a natureza mais abrangente e desafiadora da engenharia de software em comparação com a programação tradicional. Os engenheiros de software precisam pensar além do código e considerar o impacto a longo prazo, a escalabilidade e os riscos envolvidos no desenvolvimento de software.
