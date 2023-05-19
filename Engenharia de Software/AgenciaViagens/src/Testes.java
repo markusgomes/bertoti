@@ -2,6 +2,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 import java.util.Calendar;
+//import java.util.List;
 
 
 public class Testes {
@@ -40,5 +41,8 @@ public class Testes {
 
         Destino destinoEncontrado = agenciaViagens.buscarDestinoPorCidade("Porto Alegre");
         assertEquals(destinoEncontrado.getEstado(),"RS");
+
+        /*List<Destino> destinoEncontrados = agenciaViagens.buscarDestinoPorCidade("Porto Alegre");
+        assertEquals(destinoEncontrados.get(0).getPais(), 1);*/
     }
 }
