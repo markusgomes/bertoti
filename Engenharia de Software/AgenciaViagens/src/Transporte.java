@@ -1,10 +1,10 @@
-/*
-public class Veiculo {
+
+/*public class Transporte {
 
     private String placa;
     private Especificacao espec;
     
-    public Veiculo(String placa, Especificacao espec) {
+    public Transporte(String placa, Especificacao espec) {
         this.placa = placa;
         this.espec = espec;
     }
@@ -23,4 +23,4 @@ public class Veiculo {
         this.espec = espec;
     }
 }
- */
+*/

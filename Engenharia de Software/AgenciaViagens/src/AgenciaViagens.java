@@ -3,16 +3,18 @@ import java.util.List;
 
 public class AgenciaViagens {
     
-    private List<Pessoa> pessoas = new LinkedList<Pessoa>();
 
-    public void cadastrarPessoa(Pessoa pessoa) {
-        pessoas.add(pessoa);
+    // PASSAGEIRO
+    private List<Passageiro> passageiros = new LinkedList<Passageiro>();
+
+    public void cadastrarPessoa(Passageiro passageiro) {
+        passageiros.add(passageiro);
     }
 
-    public Pessoa buscarPessoaPorCpf(int cpf) {
-        for(Pessoa pessoa:pessoas){
-            if(pessoa.getCpf() == cpf){
-                return pessoa;
+    public Passageiro buscarPassageiroPorCpf(int cpf) {
+        for(Passageiro passageiro:passageiros){
+            if(passageiro.getCpf() == cpf){
+                return passageiro;
             } else {
                 return null;
             }
@@ -20,11 +22,34 @@ public class AgenciaViagens {
         return null;
     }
 
-    public List<Pessoa> getPessoas(){
-        return this.pessoas;
+    public List<Passageiro> getPassageiros(){
+        return this.passageiros;
     }
 
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+
+   // DESTINO
+    private List<Destino> destinos = new LinkedList<Destino>();
+
+    public void cadastrarDestino(Destino destino) {
+        destinos.add(destino);
     }
+
+    public Destino buscarDestinoPorCidade(String cidade) {
+        for(Destino destino:destinos){
+            if(destino.getCidade().equals(cidade)){
+                return destino;
+            } else {
+                return null;
+            }
+        }
+        return null;
+    }
+
+    public List<Destino> getDestinos(){
+        return this.destinos;
+    }
+
+
+    // TRANSPORTE
 }
+

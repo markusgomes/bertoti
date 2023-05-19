@@ -1,12 +1,12 @@
 import java.util.Calendar;
 
-public class Pessoa {
+public class Passageiro {
     private String nome;
     private int cpf;
     private String cidadeOrig;
     private Calendar dataNascimento;
     
-    public Pessoa(String nome, int cpf, String cidadeOrig, Calendar dataNascimento) {
+    public Passageiro(String nome, int cpf, String cidadeOrig, Calendar dataNascimento) {
         this.nome = nome;
         this.cpf = cpf;
         this.cidadeOrig = cidadeOrig;

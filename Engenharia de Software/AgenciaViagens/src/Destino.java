@@ -1,10 +1,10 @@
 
-public class Lugar {
+public class Destino {
     private String cidade;
     private String estado;
     private String pais;
     
-    public Lugar(String cidade, String estado, String pais) {
+    public Destino(String cidade, String estado, String pais) {
         this.cidade = cidade;
         this.estado = estado;
         this.pais = pais;
