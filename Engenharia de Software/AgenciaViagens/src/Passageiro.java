@@ -4,12 +4,14 @@ public class Passageiro {
     private String nome;
     private int cpf;
     private String cidadeOrig;
+    private String estadoOrigem;
     private Calendar dataNascimento;
     
-    public Passageiro(String nome, int cpf, String cidadeOrig, Calendar dataNascimento) {
+    public Passageiro(String nome, int cpf, String cidadeOrig, String estadoOrigem, Calendar dataNascimento) {
         this.nome = nome;
         this.cpf = cpf;
         this.cidadeOrig = cidadeOrig;
+        this.estadoOrigem = estadoOrigem;
         this.dataNascimento = dataNascimento;
     }
     
@@ -32,6 +34,13 @@ public class Passageiro {
     }
     public void setCidadeOrig(String cidadeOrig) {
         this.cidadeOrig = cidadeOrig;
+    }
+
+    public String getEstadoOrigem() {
+        return estadoOrigem;
+    }
+    public void setEstadoOrigem(String estadoOrigem) {
+        this.estadoOrigem = estadoOrigem;
     }
 
     public Calendar getDataNascimento() {

@@ -9,11 +9,13 @@ Comentário:
 Questões:
 
 1. O que é a Engenharia de Software?
+
   1.1. Qual é a relação com Programação?
   
     R.(1.) A engenharia de software é uma disciplina que se concentra no desenvolvimento sistemático e na construção de software de alta qualidade, abrangendo todas as etapas do ciclo de vida do mesmo; (1.1.) A relação entre engenharia de software e programação é estreita, pois a programação é uma das atividades fundamentais realizadas durante o processo de engenharia de software. No entanto, a engenharia de software vai além da programação isolada, englobando uma abordagem mais ampla e sistemática para o desenvolvimento de software.
    
 2. O que são Requisitos?
+
   2.1. Funcionais? Exemplos.
   2.2. Não Funcionais? Exemplos.
   2.3. Dê exemplos de Trade-Offs em Requisitos Não Funcionais.
