@@ -1,42 +1,26 @@
-
+/*
 public class Veiculo {
-    private String modelo;
-    private String marca;
-    private int ano;
+
     private String placa;
+    private Especificacao espec;
     
-    public Veiculo(String modelo, String marca, int ano, String placa) {
-        this.modelo = modelo;
-        this.marca = marca;
-        this.ano = ano;
+    public Veiculo(String placa, Especificacao espec) {
         this.placa = placa;
-    }
-    
-    public String getModelo() {
-        return modelo;
-    }
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-    
-    public String getMarca() {
-        return marca;
-    }
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-    
-    public int getAno() {
-        return ano;
-    }
-    public void setAno(int ano) {
-        this.ano = ano;
+        this.espec = espec;
     }
     
     public String getPlaca() {
         return placa;
     }
-    public void setPlaca(String placa) {
-        this.placa = placa;
+    public void setPlaca(String novaPlaca) {
+        placa = novaPlaca;
+    }
+    
+    public Especificacao getEspec() {
+        return espec;
+    }
+    public void setEspec(Especificacao espec) {
+        this.espec = espec;
     }
 }
+ */
