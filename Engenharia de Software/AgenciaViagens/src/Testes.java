@@ -23,11 +23,13 @@ public class Testes {
 
        Passageiro pessoaEncontrada = agenciaViagens.buscarPassageiroPorCpf(999999999);
        assertEquals(pessoaEncontrada.getCidadeOrig(), "SJC_SP");
+
     }
 
 
     @Test
-    public void testesDestino(){
+    public void testesDestino() {
+
         AgenciaViagens agenciaViagens = new AgenciaViagens();
         assertEquals(agenciaViagens.getDestinos().size(), 0);
 
@@ -38,6 +40,7 @@ public class Testes {
 
         Destino destinoEncontrado = agenciaViagens.buscarDestinoPorCidade("New York");
         assertEquals(destinoEncontrado.getPais(),"EUA");
+
     }
     
 }
