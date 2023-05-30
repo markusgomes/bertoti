@@ -50,7 +50,28 @@ public class AgenciaViagens {
     }
 
 
-    // TRANSPORTE
+    // Carro
+    private List<Carro> carros = new LinkedList<Carro>();
+
+    public void cadastrarCarro(Carro carro) {
+        carros.add(carro);
+    }
+
+    public Carro buscarCarroPorCidade(String cidade) {
+        for (Carro carro:carros){
+            if(carro.getCidade().equals(cidade)){
+                return carro;
+            } else {
+                return null;
+            }
+        
+        }
+        return null;
+    }
+
+    public List<Carro> getCarros(){
+        return this.carros;
+    }
 
 
 }

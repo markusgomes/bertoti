@@ -2,7 +2,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 import java.util.Calendar;
-//import java.util.List;
 
 
 public class Testes {
@@ -24,7 +23,6 @@ public class Testes {
 
        Passageiro pessoaEncontrada = agenciaViagens.buscarPassageiroPorCpf(999999999);
        assertEquals(pessoaEncontrada.getCidadeOrig(), "SJC");
-
     }
 
 
@@ -41,8 +39,20 @@ public class Testes {
 
         Destino destinoEncontrado = agenciaViagens.buscarDestinoPorCidade("Porto Alegre");
         assertEquals(destinoEncontrado.getEstado(),"RS");
-
-        /*List<Destino> destinoEncontrados = agenciaViagens.buscarDestinoPorCidade("Porto Alegre");
-        assertEquals(destinoEncontrados.get(0).getPais(), 1);*/
     }
+
+
+    @Test
+    public void testesCarro() {
+
+        AgenciaViagens agenciaViagens = new AgenciaViagens();
+        assertEquals(agenciaViagens.getCarros().size(), 0);
+
+        agenciaViagens.cadastrarCarro(new Carro("Gol", "VW", "Preto", "SJC", 2018));
+        assertEquals(agenciaViagens.getCarros().size(), 1);
+
+        Carro carroEncontrado = agenciaViagens.buscarCarroPorCidade("SJC");
+        assertEquals(carroEncontrado.getModelo(),"Gol");
+    }
+
 }
