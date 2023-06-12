@@ -1,4 +1,5 @@
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 import java.util.Calendar;
@@ -23,6 +24,9 @@ public class Testes {
 
        Passageiro pessoaEncontrada = agenciaViagens.buscarPassageiroPorCpf(999999999);
        assertEquals(pessoaEncontrada.getCidadeOrig(), "SJC");
+
+       Passageiro passageiroNaoEncontrado = agenciaViagens.buscarPassageiroPorCpf(111111111);
+       assertNull(passageiroNaoEncontrado);
     }
 
 
@@ -39,6 +43,9 @@ public class Testes {
 
         Destino destinoEncontrado = agenciaViagens.buscarDestinoPorCidade("Porto Alegre");
         assertEquals(destinoEncontrado.getEstado(),"RS");
+
+        Destino destinoNaoEncontrado = agenciaViagens.buscarDestinoPorCidade("Belo Horizonte");
+        assertNull(destinoNaoEncontrado);
     }
 
 
@@ -53,6 +60,9 @@ public class Testes {
 
         Carro carroEncontrado = agenciaViagens.buscarCarroPorCidade("SJC");
         assertEquals(carroEncontrado.getModelo(),"Gol");
+
+        Carro carroNaoEncontrado = agenciaViagens.buscarCarroPorCidade("Belo Horizonte");
+        assertNull(carroNaoEncontrado);
     }
 
 }
